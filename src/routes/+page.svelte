@@ -1,12 +1,13 @@
 <script>
-    export let title = "Svelte App";
-    console.log(title);
-
-    export let count = 0;
+    import Counter from "../lib/Counter.svelte";
+    import List from "../lib/List.svelte";
+    import Nav from "../lib/Nav.svelte"
 </script>
 
-<h1>Welcome to {title}</h1>
+<style>
 
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<button on:click={() => count++}>Click</button>
-<p>{count}</p>
+</style>
+
+<Nav />
+<Counter />
+<List />
